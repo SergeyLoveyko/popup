@@ -2,8 +2,14 @@ const checkValue = document.querySelector('#checkbox'),
       btn = document.querySelector('.popup__sub'),
       popupLink = document.querySelector('.popup-link'),
       body = document.querySelector('body'),
-      lockPadding = document.querySelector('.lock-padding');
+      lockPadding = document.querySelector('.lock-padding'),
+      POPUP = document.querySelector('.popup'),
+      FORM = document.getElementById('popup__form'),
+      NAME_INPUT = document.getElementById('popup__name'),
+      EMAIL_INPUT = document.getElementById('popup__email'),
+      PHONE_INPUT = document.getElementById('popup__phone');
 
+      
 
 btn.setAttribute('disabled', true);
 
@@ -15,6 +21,21 @@ checkValue.oninput = function () {
   }
 }
 
+
+
+FORM.addEventListener('submit', (event) => {
+  event.preventDefault();
+
+  if (NAME_INPUT.value == "") {
+    alert('Завершите заполнение всех пунктов');
+  } else {
+    alert('Благодарим Вас за доверие !');
+    FORM.submit();
+  }
+});
+
+
+//  result
 
 
 
