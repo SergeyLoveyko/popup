@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalize.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <title>Popup</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- <header id="header" class="header lock-padding">
+        <div class="header__container container">
+          <a class="header__logo" href="#"></a>
+          <a class="header__phone popup-link" href="#">Открыть модальное окно</a>
+        </div>
+      </header> -->
+      <main class="main lock-padding" id="main">
+        <div class="container">
+          <h2 class="main__title">Lorem ipsum Title</h2>
+          <div class="main__text">
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore ipsum tempore minus molestias recusandae ab accusamus, inventore reprehenderit provident atque fugit adipisci nobis alias aspernatur, praesentium iure, eos quaerat.
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores dolore ipsum tempore minus molestias recusandae ab accusamus, inventore reprehenderit provident atque fugit adipisci nobis alias aspernatur, praesentium iure, eos quaerat.
+            </p>
+          </div>
+          <a href="#popup" class="popup-link">Открыть модальное окно</a>
+        </div>
+      </main>
+    </div>
+
+    <div id="popup" class="popup">
+      <a href="#main" class="popup__area"></a>
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#main" class="popup__close">X</a>
+          <form action="" class="popup__form">
+            <legend class="popup__title">Модальное окно</legend>
+            <div class="popup__labelblock">
+              <label class="popup__label" for="popup__name">Ваше Имя:</label>
+              <input class="popup__name popup__input" id="popup__name" type="text" name="text" placeholder="Введите Ваше Имя" required />
+            </div>
+            <div class="popup__labelblock">
+              <label class="popup__label" for="popup__email">Ваша почта:</label>
+              <input class="popup__email popup__input" id="popup__email" type="email" name="email" placeholder="Введите Вашу почту" required />
+            </div>
+            <div class="popup__labelblock">
+              <label class="popup__label" for="popup__phone">Ваш телефон:</label>
+              <input
+                class="popup__phone popup__input"
+                id="popup__phone"
+                type="phone"
+                name="phone"
+                placeholder="Введите Ваш телефон"
+                required
+              />
+            </div>
+            
+            <input
+              class="popup__sub"
+              type="submit"
+              name="sub"
+              value="ОТПРАВИТЬ"
+            />
+          </form>
+          <div class="popup__disclamer">
+            <label>
+              <input class="popup__checkbox" id="checkbox" type="checkbox"> 
+                <span class="popup__disclamer_text">Lorem ipsum!</span>
+            </label>
+          </div>
+          <div id="ercontshtml"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
